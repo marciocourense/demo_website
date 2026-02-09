@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portfolio</title>
+	<!-- css files -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.1/css/bulma.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+
+	<!-- external libraries-->
+	<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
+	
+	<link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
+	<meta name="author" content="Marcio Fernandes">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+	<body>
+		<!-- Navbar -->
+		<nav class="nav container void-background">
+			<!-- This "nav-menu" is hidden on mobile -->
+			<!-- Add the modifier "is-active" to display it on mobile -->
+		
+			<div class="nav-left">
+				<a href="http://github.com/marciocourense" class="nav-item">
+					<span class="icon">
+						<i class="fa fa-github"></i>
+					</span>
+				</a>
+				<a>
+				<a href="https://www.linkedin.com/in/marciofernandes1" class="nav-item">	
+					<span class="icon">
+						<i class="fa fa-linkedin"></i>
+					</span>
+				</a>			
+			</div>
+			<div class="nav-right nav-menu">
+				<a class="nav-item" href="https://marciocourense.github.io/">About</a>
+				<a class="nav-item" href="#projects">Projects</a>
+				<a class="nav-item" href="#social">Social</a>
+			</div>
+
+			<!-- This "nav-toggle" hamburger menu is only visible on mobile -->
+			<!-- You need JavaScript to toggle the "is-active" class on "nav-menu" -->
+			<span class="nav-toggle">
+				<span></span>
+				<span></span>
+				<span></span>
+			</span>
+		</nav>
+				
+		<!-- About Me -->
+		<section id="about" class="section section-1">
+			<div class="container has-text-centered">
+				<!-- Source: https://flic.kr/p/pAZBNK -->
+				<img class="avatar" src="assets/img/marcio_profile.png">
+			</div>
+			<div class="container"></br>
+				<p class="intro">
+					I am Marcio, Data Engineer, cloud architect, and co-founder Camina trading and consulting group. Being naturally curious and committed to maintaining cutting edge technical skills, I've spent +8 years working for some of the most prestigious brands, including AWS, Accenture, Bayer and others. 
+					Below are examples of open projects that I have worked on. PS: To access the most projects in my portfolio, please visit Camina group website.
+				</p>
+			</div>
+		</section>
+		
+		<!-- Projects -->
+		<section  id="projects" class="section section-2">
+			<div class="container">
+				<div class="has-text-centered">
+					<h3 class="title is-3">Projects</h3>
+				</div>
+				<div class="columns is-multiline is-desktop">
+					<!-- Project 1 -->
+					<div class="column">
+						<div class="box project-text">
+							<article>
+								<div>
+									<figure class="image project-figure">
+										<img src="assets/img/autos.jpg" alt="Image">
+									</figure>
+								</div>
+								<div>			
+									<p>
+										Easy to understand, yet highly efficient statistical analysis, on 'Used cars for sale dataset' from ebay. A large dataset, with over 370.000 sale records through 2016, in the german market.
+								                This is a deep cleaning and data mining exercise, going through the steps of resurrecting a seemingly dirty and unreliable dataset, to transforming it into a clean file. And uncovering hidden meaning in each variable. Tools used: #Python
+									</p>
+									<p>
+										You can find the code <a href="https://github.com/marciocourense/ebay-dataset/blob/master/used_cars_ebay.ipynb">here</a>.
+									</p>	
+								</div>
+							</article>
+						</div>
+						<div class="box project-text">
+							<article>
+								<div>
+									<figure class="image project-figure">
+										<img src="assets/img/allstate.jpg" alt="Image">
+									</figure>
+								</div>
+								<div>			
+									<p>
+										An advanced analysis, on one of the most fierce competions, to ever happen on kaggle. This an easy to read an visually appealing analysis on a large and very well anonymized dataset. Tools used: #R 
+									</p>
+	      								<p>
+										You can find the code <a href="https://www.kaggle.com/statisticalpirate/allstate-claims-severity/my-first-kernel">here</a>.
+									</p>
+								</div>
+							</article>
+						</div>
+						<div class="box project-text">
+							<article>
+								<div>
+									<figure class="image project-figure">
+										<img src="assets/img/woman_help.jpg" alt="Image">
+									</figure>
+								</div>
+								<div>			
+									<p>
+										Simple script ran on Microsoft's and Bill Gate's foundation dataset regarding Women's gynecological problems in third world countries. 
+									        The dataset is collection of records made by several doctors on the field. Some of the discoveries are a starke and shocking reminder, of opposite realities (and maybe the reason why certain variables are anonnimized). Also as with any survey, there is lots of erroneous input and missing which forces to find hidden meanings in the dataset in order to fill the gaps. 
+										Tools used: #R								
+									</p>
+									<p>
+										You can find the code <a href="hhttps://github.com/marciocourense/women-s-health/blob/master/womens_health.ipynb">here</a>.
+									</p>
+								</div>
+							</article>
+						</div>
+						<div class="box project-text">
+							<article>
+								<div>
+									<figure class="image project-figure">
+										<img src="assets/img/logistics.jpg" alt="Image">
+									</figure>
+								</div>
+								<div>			
+									<p>
+                                                                                Cut the informational bullwhip in your supply chain and detect deviations / fraud in your supply chain.
+										This a tool developed in cooperation with my former manager Ronald Vissers. This is a powerfull solution capable of detecting
+										deviations in the logistics sector. It ingests data from multiple sources and compares the data with sequential, automated queries. In order to flag it/correct it when necesary 
+										(e.g. comapring payments and different shipments specifications as weight,volume,wegiht/volume, custom duties, so on).
+										Tools used: #MySQL #Access										
+									</p>
+								</div>
+							</article>
+						</div>	
+					</div>					
+					<!-- Project 2 -->
+					<div class="column">
+						<div class="box project-text">
+							<article>
+								<div>
+									<figure class="image project-figure">
+										<img src="assets/img/dedupler.jpg" alt="Image">
+									</figure>
+								</div>
+								<div>			
+									<p>
+                                                                                An upgrade over one of most used tools to link data records, the 'deduper'. This upgraded version does not only allows you to standardize, deduplicate and clean the dataset. It also uses machine learning to discover the reasons why you have wrong input in the first place. Tools used: #Python #Django
+										!Due to the value of this work, a demo is only possible by personnel request.
+									</p>									
+								</div>
+							</article>
+						</div>
+						<div class="box project-text">
+							<article>
+								<div>
+									<figure class="image project-figure">
+										<img src="assets/img/vat.jpg" alt="Image">
+									</figure>
+								</div>
+								<div>			
+									<p>
+										Simple but efficient tool, to verify VAT numbers. Extracting additional company information and detecting invalid numbers, with just one single click. You can choose between verifying one number or to upload a file with multiple numbers. 
+										The validation process is done through the European Union database, to ensure maximum reliability. It also can correct/rectify additional fields in your dataset, by comparing it with the european records.
+										The concept is simple, but the impact is big!. Tools used: #Python #Django. !Demo only by request.
+									</p>
+								</div>
+							</article>
+						</div>						
+						<div class="box project-text">	
+							<article>
+								<div>
+									<figure class="image project-figure">
+										<img src="assets/img/iris.png" alt="Image">
+									</figure>
+								</div>
+								<div>			
+									<p>
+                                                                                When I switched from R to python, I often came across the issue of finding a good demo for hierarchical clustering mixed data types (text and numerical values) on python. 
+										Using the famous 'iris' flowers subspecies dataset, you will be guided of how to construct a beatiful hierarchical clustering, dendogram 'R' style in Python. Tools used: #Python										
+									</p>
+									<p>
+										You can find the code <a href="https://github.com/marciocourense/clustering-mixed-data-types/blob/master/hiererchal%2Bclustering%2Bin%2Bpython%2528Iris%2529.ipynb">here</a>.
+									</p>
+								</div>
+							</article>
+						</div>
+						<div class="box project-text">	
+							<article>
+								<div>
+									<figure class="image project-figure">
+										<img src="assets/img/address.jpg" alt="Image">
+									</figure>
+								</div>
+								<div>			
+									<p>
+                                                                                An address verifier, capable of rectifying addresses in entire file. Address parsing/verification has been one of the most tackled topics in logistics.
+										Hint, just google the number of companies that offer partial solutions on this. Tools used: #Python #Django										
+									</p>
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</section>
+
+		<!-- Social -->
+		<section id="social" class="section section-3">
+			<div class="container">
+				<div class="has-text-centered">					
+					<h3 class="title is-3">Let's Socialize</h3>
+				</div>
+				<div class="social-container columns">
+					<div class="column is-4 has-text-centered">
+						<a target="_blank" href="https://www.linkedin.com/in/marciofernandes1"><img class="" src="assets/img/linkedin.png"></a>
+					</div>
+					<div class="column is-4 has-text-centered">
+						<a target="_blank" href="https://www.github.com/marciocourense"><img class="" src="assets/img/github.png"></a>
+					</div>				
+					<div class="column is-4 has-text-centered">
+						<a target="_blank" href="https://www.kaggle.com/statisticalpirate"><img class="" src="assets/img/kaggle.png"></a>
+					</div>
+				</div>	
+			</div>
+		</section>	
+		
+		<!-- Footer -->
+		<section class="section-4 has-text-centered container">
+			<a href="http://www.urbandictionary.com/define.php?term=Marcio">Marcio Fernandes</a>
+		</section>
+		
+		<!-- Scripts  -->
+		<script src="controller.js"></script>		
+	</body>	
+</html>
