@@ -178,9 +178,9 @@ window.onload = () => {
     // Performance optimization: preload critical images
     const preloadImages = () => {
         const criticalImages = [
-            'assets/img/marcio_profile.png',
-            'assets/img/linkedin.png',
-            'assets/img/github.png'
+            'assets/img/marcio_profile.svg',
+            'assets/img/linkedin.svg',
+            'assets/img/github.svg'
         ];
         
         criticalImages.forEach(src => {
