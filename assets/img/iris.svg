@@ -1,5 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
-  <rect width="800" height="400" fill="#0A1929"/>
-  <text x="400" y="195" text-anchor="middle" fill="#E5E4E2" font-family="Georgia,serif" font-size="30">Iris clustering</text>
-  <text x="400" y="235" text-anchor="middle" fill="#D4AF37" font-family="Georgia,serif" font-size="22">Python hierarchical</text>
-</svg>

@@ -1,247 +1,208 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
 	<meta charset="UTF-8">
-	<title>Portfolio</title>
-	<!-- css files -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.1/css/bulma.min.css">
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Playfair+Display:wght@400;500;600&amp;display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
-
-	<!-- external libraries-->
-	<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
-	
-	<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
-	<meta name="author" content="Marcio Fernandes">
+	<title>Baltazar de Castro Fernandes | Académico, investigador e escritor</title>
+	<meta name="description" content="Baltazar de Castro Fernandes — autor de Entre o Delírio e a Realidade e do Manual do Iramuteq sobre Representações Sociais. Investigador na Universidade do Minho.">
+	<meta name="author" content="Baltazar de Castro Fernandes">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta property="og:type" content="website">
+	<meta property="og:locale" content="pt_PT">
+	<meta property="og:title" content="Baltazar de Castro Fernandes | Académico, investigador e escritor">
+	<meta property="og:description" content="Literatura, investigação nas Representações Sociais e obra académica sobre análise de dados e mudança organizacional.">
+	<meta property="og:image" content="https://marciocourense.github.io/demo_website/assets/img/baltazar-portrait.jpg">
+	<meta property="og:url" content="https://marciocourense.github.io/demo_website/">
+
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Baltazar de Castro Fernandes">
+	<meta name="twitter:description" content="Literatura, investigação nas Representações Sociais e obra académica.">
+	<meta name="twitter:image" content="https://marciocourense.github.io/demo_website/assets/img/baltazar-portrait.jpg">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+	<link rel="icon" href="assets/img/favicon-32.png" type="image/png">
+
+	<link rel="canonical" href="https://marciocourense.github.io/demo_website/">
 </head>
-	<body>
-		<!-- Navbar -->
-		<nav class="nav container void-background">
-			<!-- This "nav-menu" is hidden on mobile -->
-			<!-- Add the modifier "is-active" to display it on mobile -->
-		
-			<div class="nav-left">
-				<a href="http://github.com/marciocourense" class="nav-item">
-					<span class="icon">
-						<i class="fa fa-github"></i>
-					</span>
-				</a>
-				<a href="https://www.linkedin.com/in/marciofernandes1" class="nav-item">	
-					<span class="icon">
-						<i class="fa fa-linkedin"></i>
-					</span>
-				</a>			
-			</div>
-			<div class="nav-right nav-menu">
-				<a class="nav-item" href="https://marciocourense.github.io/demo_website/#about">About</a>
-				<a class="nav-item" href="#projects">Projects</a>
-				<a class="nav-item" href="#social">Social</a>
-			</div>
+<body>
 
-			<!-- This "nav-toggle" hamburger menu is only visible on mobile -->
-			<!-- You need JavaScript to toggle the "is-active" class on "nav-menu" -->
-			<span class="nav-toggle">
-				<span></span>
-				<span></span>
-				<span></span>
-			</span>
-		</nav>
-				
-		<!-- About Me -->
-		<section id="about" class="section section-1">
-			<div class="container has-text-centered">
-				<!-- Source: https://flic.kr/p/pAZBNK -->
-				<img class="avatar" src="assets/img/marcio_profile.svg" alt="Marcio Fernandes portrait">
+	<a class="skip-link" href="#main">Saltar para o conteúdo</a>
+
+	<nav class="nav-bar" aria-label="Navegação principal">
+		<div class="nav-inner container">
+			<span class="nav-brand">Baltazar de Castro Fernandes</span>
+			<div class="nav-menu nav-right" id="primary-menu">
+				<a class="nav-item" href="#sobre">Sobre</a>
+				<a class="nav-item" href="#ficcao">Ficção</a>
+				<a class="nav-item" href="#investigacao">Investigação</a>
 			</div>
-			<div class="container"></br>
-				<p class="intro">
-					I am Marcio, Data Engineer, cloud architect, and co-founder Camina trading and consulting group. Being naturally curious and committed to maintaining cutting edge technical skills, I've spent +8 years working for some of the most prestigious brands, including AWS, Accenture, Bayer and others. 
-					Below are examples of open projects that I have worked on. PS: To access the most projects in my portfolio, please visit Camina group website.
-				</p>
-			</div>
-		</section>
-		
-		<!-- Projects -->
-		<section  id="projects" class="section section-2">
-			<div class="container">
-				<div class="has-text-centered">
-					<h3 class="title is-3">Projects</h3>
+			<button type="button" class="nav-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="primary-menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</div>
+	</nav>
+
+	<main id="main">
+
+		<header class="hero section">
+			<div class="container hero-grid">
+				<div class="hero-visual">
+					<img class="hero-photo"
+						src="assets/img/baltazar-portrait.jpg"
+						width="900"
+						height="900"
+						alt="Baltazar de Castro Fernandes — retrato em contexto português."
+						decoding="async"
+						fetchpriority="high">
 				</div>
-				<div class="columns is-multiline is-desktop">
-					<!-- Project 1 -->
-					<div class="column">
-						<div class="box project-text">
-							<article>
-								<div>
-									<figure class="image project-figure">
-										<img src="assets/img/autos.svg" alt="Used cars eBay dataset project">
-									</figure>
-								</div>
-								<div>			
-									<p>
-										Easy to understand, yet highly efficient statistical analysis, on 'Used cars for sale dataset' from ebay. A large dataset, with over 370.000 sale records through 2016, in the german market.
-								                This is a deep cleaning and data mining exercise, going through the steps of resurrecting a seemingly dirty and unreliable dataset, to transforming it into a clean file. And uncovering hidden meaning in each variable. Tools used: #Python
-									</p>
-									<p>
-										You can find the code <a href="https://github.com/marciocourense/ebay-dataset/blob/master/used_cars_ebay.ipynb">here</a>.
-									</p>	
-								</div>
-							</article>
-						</div>
-						<div class="box project-text">
-							<article>
-								<div>
-									<figure class="image project-figure">
-										<img src="assets/img/allstate.svg" alt="Allstate Kaggle competition project">
-									</figure>
-								</div>
-								<div>			
-									<p>
-										An advanced analysis, on one of the most fierce competions, to ever happen on kaggle. This an easy to read an visually appealing analysis on a large and very well anonymized dataset. Tools used: #R 
-									</p>
-	      								<p>
-										You can find the code <a href="https://www.kaggle.com/statisticalpirate/allstate-claims-severity/my-first-kernel">here</a>.
-									</p>
-								</div>
-							</article>
-						</div>
-						<div class="box project-text">
-							<article>
-								<div>
-									<figure class="image project-figure">
-										<img src="assets/img/woman_help.svg" alt="Women's health dataset project">
-									</figure>
-								</div>
-								<div>			
-									<p>
-										Simple script ran on Microsoft's and Bill Gate's foundation dataset regarding Women's gynecological problems in third world countries. 
-									        The dataset is collection of records made by several doctors on the field. Some of the discoveries are a starke and shocking reminder, of opposite realities (and maybe the reason why certain variables are anonnimized). Also as with any survey, there is lots of erroneous input and missing which forces to find hidden meanings in the dataset in order to fill the gaps. 
-										Tools used: #R								
-									</p>
-									<p>
-										You can find the code <a href="https://github.com/marciocourense/women-s-health/blob/master/womens_health.ipynb">here</a>.
-									</p>
-								</div>
-							</article>
-						</div>
-						<div class="box project-text">
-							<article>
-								<div>
-									<figure class="image project-figure">
-										<img src="assets/img/logistics.svg" alt="Supply chain logistics project">
-									</figure>
-								</div>
-								<div>			
-									<p>
-                                                                                Cut the informational bullwhip in your supply chain and detect deviations / fraud in your supply chain.
-										This a tool developed in cooperation with my former manager Ronald Vissers. This is a powerfull solution capable of detecting
-										deviations in the logistics sector. It ingests data from multiple sources and compares the data with sequential, automated queries. In order to flag it/correct it when necesary 
-										(e.g. comapring payments and different shipments specifications as weight,volume,wegiht/volume, custom duties, so on).
-										Tools used: #MySQL #Access										
-									</p>
-								</div>
-							</article>
-						</div>	
-					</div>					
-					<!-- Project 2 -->
-					<div class="column">
-						<div class="box project-text">
-							<article>
-								<div>
-									<figure class="image project-figure">
-										<img src="assets/img/dedupler.svg" alt="Deduplication ML project">
-									</figure>
-								</div>
-								<div>			
-									<p>
-                                                                                An upgrade over one of most used tools to link data records, the 'deduper'. This upgraded version does not only allows you to standardize, deduplicate and clean the dataset. It also uses machine learning to discover the reasons why you have wrong input in the first place. Tools used: #Python #Django
-										!Due to the value of this work, a demo is only possible by personnel request.
-									</p>									
-								</div>
-							</article>
-						</div>
-						<div class="box project-text">
-							<article>
-								<div>
-									<figure class="image project-figure">
-										<img src="assets/img/vat.svg" alt="VAT verification tool">
-									</figure>
-								</div>
-								<div>			
-									<p>
-										Simple but efficient tool, to verify VAT numbers. Extracting additional company information and detecting invalid numbers, with just one single click. You can choose between verifying one number or to upload a file with multiple numbers. 
-										The validation process is done through the European Union database, to ensure maximum reliability. It also can correct/rectify additional fields in your dataset, by comparing it with the european records.
-										The concept is simple, but the impact is big!. Tools used: #Python #Django. !Demo only by request.
-									</p>
-								</div>
-							</article>
-						</div>						
-						<div class="box project-text">	
-							<article>
-								<div>
-									<figure class="image project-figure">
-										<img src="assets/img/iris.svg" alt="Iris hierarchical clustering">
-									</figure>
-								</div>
-								<div>			
-									<p>
-                                                                                When I switched from R to python, I often came across the issue of finding a good demo for hierarchical clustering mixed data types (text and numerical values) on python. 
-										Using the famous 'iris' flowers subspecies dataset, you will be guided of how to construct a beatiful hierarchical clustering, dendogram 'R' style in Python. Tools used: #Python										
-									</p>
-									<p>
-										You can find the code <a href="https://github.com/marciocourense/clustering-mixed-data-types/blob/master/hiererchal%2Bclustering%2Bin%2Bpython%2528Iris%2529.ipynb">here</a>.
-									</p>
-								</div>
-							</article>
-						</div>
-						<div class="box project-text">	
-							<article>
-								<div>
-									<figure class="image project-figure">
-										<img src="assets/img/address.svg" alt="Address verification project">
-									</figure>
-								</div>
-								<div>			
-									<p>
-                                                                                An address verifier, capable of rectifying addresses in entire file. Address parsing/verification has been one of the most tackled topics in logistics.
-										Hint, just google the number of companies that offer partial solutions on this. Tools used: #Python #Django										
-									</p>
-								</div>
-							</article>
-						</div>
-					</div>
-				</div>	
+				<div class="hero-text">
+					<p class="hero-kicker">Académico, investigador e escritor</p>
+					<h1 class="hero-title">Baltazar de Castro Fernandes</h1>
+					<p class="hero-lede">Investigação nas Representações Sociais, uso de tecnologias de análise e narrativa sobre a condição humana.</p>
+					<p class="hero-actions">
+						<a class="btn btn-primary" href="#ficcao">Ver obra de ficção</a>
+						<a class="btn btn-ghost" href="#investigacao">Publicações académicas</a>
+					</p>
+				</div>
+			</div>
+		</header>
+
+		<section id="sobre" class="section section-paper fade-in-section">
+			<div class="container narrow">
+				<h2>Sobre o autor</h2>
+				<div class="prose">
+					<p>Baltazar de Castro Fernandes é um académico, investigador e escritor português, Doutor em Ciências da Comunicação pela Universidade do Minho, com especialização em Comunicação Estratégica e Organizacional. A sua trajetória profissional e intelectual destaca-se pela capacidade de transitar entre a análise técnica de dados, a gestão organizacional e a narrativa literária.</p>
+					<p>No campo académico, é uma referência no estudo das Representações Sociais, tendo publicado manuais técnicos que exploram o uso de ferramentas tecnológicas avançadas (como o software Iramuteq) para a interpretação de realidades organizacionais e sociais. A sua investigação foca-se especialmente em contextos de mudança radical e fusões institucionais, área na qual se doutorou em 2014.</p>
+					<p>Para além do seu contributo científico e técnico — que inclui passagens pela investigação clínica em saúde —, Baltazar de Castro Fernandes dedica-se também à ficção. Na sua obra literária, explora temas profundos da condição humana, como a saúde mental, a resiliência e a complexidade dos laços afetivos, demonstrando uma visão humanista que complementa o seu perfil de analista de dados e gestor.</p>
+				</div>
 			</div>
 		</section>
 
-		<!-- Social -->
-		<section id="social" class="section section-3">
+		<section id="ficcao" class="section section-accent fade-in-section">
 			<div class="container">
-				<div class="has-text-centered">					
-					<h3 class="title is-3">Let's Socialize</h3>
-				</div>
-				<div class="social-container columns">
-					<div class="column is-4 has-text-centered">
-						<a target="_blank" href="https://www.linkedin.com/in/marciofernandes1"><img src="assets/img/linkedin.svg" alt="LinkedIn" width="72" height="72"></a>
+				<h2 class="center-heading">Literatura</h2>
+				<p class="section-intro center-heading">Um romance sobre resiliência, saúde mental e laços afetivos.</p>
+
+				<article class="book-card book-feature">
+					<div class="book-card-cover">
+						<img src="assets/img/capa-delirio-realidade.jpg"
+							width="480"
+							height="720"
+							alt="Capa do livro Entre o Delírio e a Realidade."
+							loading="lazy">
 					</div>
-					<div class="column is-4 has-text-centered">
-						<a target="_blank" href="https://www.github.com/marciocourense"><img src="assets/img/github.svg" alt="GitHub" width="72" height="72"></a>
-					</div>				
-					<div class="column is-4 has-text-centered">
-						<a target="_blank" href="https://www.kaggle.com/statisticalpirate"><img src="assets/img/kaggle.svg" alt="Kaggle" width="72" height="72"></a>
+					<div class="book-card-body">
+						<h3 class="book-title">Entre o Delírio e a Realidade</h3>
+						<p class="book-author-line">Um romance de Baltazar Fernandes · <span class="price-tag">15,00 €</span></p>
+						<p>Neste romance de Baltazar Fernandes, acompanhamos Elias, um génio tão brilhante quanto vulnerável, que enfrenta o peso da doença mental enquanto procura sentido entre o amor e a perda. Entre diferentes cenários e desafios internos, a história revela como os laços humanos podem ser a chave para a superação e reconstrução de uma vida.</p>
+						<ul class="bullet-highlights">
+							<li>História marcada por amor, perda e superação</li>
+							<li>Exploração sensível dos limites da mente humana</li>
+							<li>Portugal e a Suíça, IST, vínculos e identidade</li>
+						</ul>
+						<p class="book-actions-row">
+							<a class="btn btn-primary" href="https://editorareticencias.pt/produto/entre-o-delirio-e-a-realidade/" target="_blank" rel="noopener noreferrer">Comprar na Editora Reticências</a>
+						</p>
+						<details class="read-more-details">
+							<summary>Sinopse completa</summary>
+							<div class="prose prose-compact mt-05">
+								<p><em>Elias</em> é o protagonista desta narrativa intensa e profundamente humana, marcada pela luta entre o delírio e a realidade. Nascido numa aldeia do Minho, a sua infância é marcada pela ausência do pai e pela frieza da mãe, encontrando consolo apenas nos braços da avó. O seminário, para onde é empurrado, deixa-lhe cicatrizes profundas, levando-o a fugir para Lisboa, onde começa uma nova vida.</p>
+								<p>Em Lisboa, Elias é acolhido por uma família que lhe oferece afeto e oportunidades. É aí que conhece Clara, o grande amor da sua vida, com quem partilha uma relação feita de ternura, cumplicidade e superação. O percurso académico leva-o ao Instituto Superior Técnico e, mais tarde, à Suíça, onde se destaca como estudante brilhante e enfrenta novos desafios, incluindo uma relação complexa com Ji-Hye, marcada por diferenças culturais e afetivas.</p>
+								<p>O romance aborda de forma sensível a experiência da esquizofrenia, mostrando não só o sofrimento e o estigma, mas também a possibilidade de reconstrução através do amor, da amizade e do acompanhamento clínico. Elias vive momentos de crise profunda, incluindo um surto psicótico e internamento, mas é através do apoio de Clara e do tratamento adequado que encontra forças para se reerguer.</p>
+								<p>Ao longo da narrativa, acompanhamos a evolução de Elias: da infância difícil à maturidade, passando pela paternidade, pelo sucesso académico e profissional, pelas perdas e reencontros, e pela busca constante de sentido e pertença. O livro celebra a força dos afetos, a resiliência perante a adversidade e a capacidade de transformar a dor em arte e conhecimento.</p>
+								<p>No final, <em>Entre o Delírio e a Realidade</em> deixa uma mensagem de esperança: mesmo quando a mente tropeça, é o amor — nas suas múltiplas formas — que cose as feridas, devolve dignidade e acende a esperança.</p>
+							</div>
+						</details>
 					</div>
-				</div>	
+				</article>
 			</div>
-		</section>	
-		
-		<!-- Footer -->
-		<section class="section-4 has-text-centered container">
-			<a href="http://www.urbandictionary.com/define.php?term=Marcio">Marcio Fernandes</a>
 		</section>
-		
-		<!-- Scripts  -->
-		<script src="controller.js"></script>		
-	</body>	
+
+		<section id="investigacao" class="section section-muted fade-in-section">
+			<div class="container">
+				<h2 class="center-heading">Investigação e publicações académicas</h2>
+				<p class="section-intro center-heading">Manual técnico, tese de doutoramento no CECS — Universidade do Minho e obra de ficção relacionada na bibliografia.</p>
+
+				<div class="dual-cards">
+
+					<article class="book-card book-academic card-shadow">
+						<div class="book-card-cover modest">
+							<img src="assets/img/capa-iramuteq.jpg"
+								width="360"
+								height="540"
+								alt="Capa: Metodologias de Análise em Representações Sociais — Manual do Iramuteq Incorporado."
+								loading="lazy">
+						</div>
+						<div class="book-card-body">
+							<h3 class="book-title">Metodologias de Análise em Representações Sociais</h3>
+							<p class="book-subtitle">Manual do Iramuteq incorporado · Chiado Books · 2019</p>
+							<p class="meta-line"><abbr title="International Standard Book Number">ISBN</abbr> 978-989-52-5522-1 · ~210 páginas</p>
+							<p>Com a presente obra, pretendemos consolidar as melhores análises de informação no mais curto espaço de tempo, recorrendo a poderosas ferramentas de análise de dados, que já se aproximam daquilo que num futuro próximo a inteligência artificial nos tem para oferecer. A abrir esta obra, logo no seu primeiro ponto, deixamos a mais elementar informação, no que respeita à análise textual. Seguidamente, no Ponto II, são abordadas as diferentes metodologias de recolha de dados nas Representações Sociais, expondo-se as fraquezas e as potencialidades de cada uma delas. No Ponto III, debruçamo-nos sobre o processo de categorização e a forma como este processo seletivo da informação nos pode ajudar, fazendo-nos perceber a amplitude cognitiva, do geral ao específico.</p>
+							<p>Mais adiante, no Ponto IV, explanamos de uma maneira evolutiva a Teoria das Representações Sociais (TRS), o modo como esta nos pode ajudar na interpretação da realidade organizacional e social, não deixando de fora desta análise a forma como estas representações sociais se organizam, estruturam e hierarquizam, relevando a importância dos seus elementos nucleares e periféricos. Seguidamente, no Ponto V, focamos as diferentes formas de mudança organizacional, na esteira do preconizado pela TRS.</p>
+							<p>Resumidamente, no Ponto VI abordamos os softwares mais utilizados na análise da estrutura e conteúdo das representações sociais. Propositadamente, deixamos o Ponto VII para uma descrição mais exaustiva do poderoso software <strong>Iramuteq<sup>®</sup></strong>, com exemplos próprios, ferramenta que tem despertado grande interesse no academia.edu (&gt;3500 visitas e &gt;500 downloads). Um capítulo dedicado consolidou dezasseis páginas de referências bibliográficas orientadas para novas pesquisas.</p>
+							<p class="price-row"><strong>Papel</strong> 13,00 € · <strong>Ebook</strong> 5,00 €</p>
+							<p class="book-actions-row">
+								<a class="btn btn-primary" href="https://www.atlanticbookshop.pt/compendium/metodologias-de-analise-em-representacoes-sociais-manual-do-iramuteq-incorporado" target="_blank" rel="noopener noreferrer">Comprar na Atlantic Bookshop</a>
+							</p>
+						</div>
+					</article>
+
+					<article class="book-card book-academic card-shadow">
+						<div class="book-card-cover modest">
+							<img src="assets/img/capa-tese-uminho.jpg"
+								width="360"
+								height="540"
+								alt="Universidade do Minho — Instituto de Ciências Sociais — Capa da tese de doutoramento."
+								loading="lazy">
+						</div>
+						<div class="book-card-body">
+							<p class="kicker-accent">Investigação académica e doutoramento · CECS / Universidade do Minho</p>
+							<h3 class="book-title">Uma Organização em Contextos de Mudança: Representações Sociais dos seus Colaboradores</h3>
+							<p class="meta-line"><em>Tese de doutoramento em Ciências da Comunicação</em> · Comunicação Estratégica e Organizacional</p>
+							<p><strong>Foco:</strong> Representações sociais de colaboradores em processos de fusão e mudança organizacional (estudo de caso: ULSAM). <strong>Abordagem:</strong> metodologias mistas; <strong>EVOC</strong>, <strong>SMI</strong> e análise fatorial de componentes principais (<strong>SPSS</strong>).</p>
+							<p class="lead-abstract"><strong>Síntese.</strong> O estudo contextualiza-se na fusão institucional que originou a ULSAM em 2008 (hospitais e centros de saúde de Viana do Castelo), cenário de mudança radical — sobretudo nos centros de saúde. Ancora-se na teoria das representações sociais, na teoria da mudança e na Visão Baseada nos Recursos. Foram combinadas associações livres sobre o nome e o logótipo ULSAM, amostras probabilísticas (450 e 108 entrevistas escritas), entrevistas a seis decisores-chave e análises quantitativas e qualitativas.</p>
+							<details class="read-more-details">
+								<summary>Abstract completo</summary>
+								<div class="prose prose-compact mt-05">
+									<p>Este estudo focaliza-se na criação da ULSAM, EPE, processo iniciado em outubro de 2008, que resultou da fusão dos dois hospitais existentes no distrito de Viana do Castelo, com todos os centros de saúde desta área geográfica. Este processo de fusão implicou um ponto de mudança radical, particularmente para os colaboradores dos centros de saúde que foram confrontados perante um cenário de mudança irreversível, em contraponto com contextos normativos de algumas décadas a que vinham habituados.</p>
+									<p>Foi a partir deste cenário de mudança que se entendeu ter um terreno propício para a investigação no âmbito das representações sociais, em contextos organizacionais de rutura normativa com práticas existentes. O estudo enquadra-se conceptualmente na teoria das representações sociais mas ancora-se também nos contributos da teoria da mudança e na teoria dos recursos.</p>
+									<p>A recolha das representações assentou em três vectores complementares: termos indutor "ULSAM"; logótipo como indutor sobre ideias e emoções; amostragem probabilística (450 elementos e, noutra fase, 108 elementos); seis entrevistas a decisores intervenientes na mudança. Na análise do conteúdo e estrutura interna, aplicaram-se o EVOC e o SMI, bem como componentes principais através do SPSS.</p>
+									<p>Concluiu-se que coexistem duas aproximações ao núcleo central das representações — uma próxima de grupos operacionais menos diferenciados (enfermeiros, assistentes) e outra de grupos especializados (médicos, técnicos superiores) — havendo assim duas grandes representações sociais com implicações distintas na gestão. Os colaboradores tendem também a estar mais preocupados com dinâmicas laborais diretas do que com todas as implicações institucionais da fusão.</p>
+								</div>
+							</details>
+							<p class="book-actions-row">
+								<a class="btn btn-primary" href="https://hdl.handle.net/1822/35674" target="_blank" rel="noopener noreferrer">Ver tese no repositório UMinho</a>
+							</p>
+
+							<div class="ref-block prose-compact mt-09">
+								<h4 class="heading-small">Referências bibliográficas principais</h4>
+								<ul class="cite-list">
+									<li>FERNANDES, Baltazar de Castro. <cite>Uma Organização em Contextos de Mudança: Representações Sociais dos seus Colaboradores.</cite> Tese de doutoramento, Universidade do Minho, 2014.</li>
+									<li>FERNANDES, Baltazar. <cite>Metodologias de Análise em Representações Sociais: Manual do Iramuteq Incorporado.</cite> Lisboa: Chiado Books, 2019. ISBN 978-989-52-5522-1.</li>
+									<li>FERNANDES, Baltazar. <cite>Entre o Delírio e a Realidade.</cite> Editora Reticências.</li>
+									<li>FERNANDES, Baltazar et al. “Inguinal Hernia Repair with Local Anesthesia in the Outpatient—10 Year Experience”. <cite>International Journal of Clinical Medicine</cite>, 2014.</li>
+								</ul>
+							</div>
+						</div>
+					</article>
+
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container footer-inner">
+			<p><strong>Baltazar de Castro Fernandes</strong> · Universidade do Minho · Literatura &amp; investigação nas Representações Sociais</p>
+			<p class="footer-muted">© <span id="current-year"></span>. Página hospedada em GitHub Pages.</p>
+		</div>
+	</footer>
+
+	<script src="controller.js"></script>
+</body>
 </html>

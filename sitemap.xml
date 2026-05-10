@@ -7,15 +7,21 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://marciocourense.github.io/demo_website/#about</loc>
+    <loc>https://marciocourense.github.io/demo_website/#sobre</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://marciocourense.github.io/demo_website/#projects</loc>
+    <loc>https://marciocourense.github.io/demo_website/#ficcao</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://marciocourense.github.io/demo_website/#investigacao</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
 </urlset>
