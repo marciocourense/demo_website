@@ -1,3 +1,6 @@
+# Requires: Repo → Settings → Pages → Source = "GitHub Actions" (save once).
+# Without that, Pages API returns 404 and deploy steps cannot run.
+
 name: Deploy to GitHub Pages
 
 on:
@@ -12,7 +15,7 @@ permissions:
 
 concurrency:
   group: pages-deploy
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   deploy:
@@ -24,14 +27,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Configure Pages
-        uses: actions/configure-pages@v5
+      # Omit configure-pages: it calls GET /repos/.../pages which 404s until Pages is enabled in repo settings.
 
       - name: Upload site
         uses: actions/upload-pages-artifact@v3
         with:
           path: '.'
+          include-hidden-files: true
 
       - name: Deploy
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
